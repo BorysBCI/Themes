@@ -1,0 +1,10 @@
+.article__img{overflow: hidden;}
+@media (min-width: 1000px){
+    .attachment-custom-size.size-custom-size.wp-post-image {
+        height: 550px;
+        width: 792px;
+        max-width: auto;
+    }
+}
+@media (max-width: 1519px) and (min-width: 1000px){ 
+}  

@@ -1,0 +1,670 @@
+.entry {
+    width: 100%;
+}
+.page-title {
+    font-size: 1.75rem;
+    color: #EC8226;
+}
+.mapcompany_head_img {
+    height: 280px;
+    width: 100%;
+    background-image: url(../img/header_img.jpeg);
+    background-size: 100%;
+    background-position: 50% 58%;
+    background-repeat: no-repeat;
+    margin: 30px 0 30px 0;
+}
+.mapcompany_btns {
+    text-align: center;
+    margin-top: 50px;
+}
+.mapcompany_btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 29%;
+    vertical-align: middle;
+    text-align: left;
+   /* height: 40px;*/
+}
+.mapcompany_btn p {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 80%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.mapcompany_btn:nth-child(1) {
+    margin-right: 50px;
+}
+.mapcompany_btn:hover {
+    color: #FC801A;
+    cursor: pointer;
+}
+.mapcompany_btn i {
+    height: 100%;
+}
+.mapcompany_btn i::before {
+    height: 100%;
+    font-size: 25px;
+    vertical-align: middle;
+}
+.mapcompany_search {
+    margin-top: 50px;
+}
+.mapcompany_search_title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #F2BB90;
+}
+.mapcompany_search_functionality {
+    border: 1px solid #f3f4f5;
+    text-align: center;
+    /*padding: 50px;*/
+	padding:10px;
+}
+label[for=mapcompany_search_state] {
+    display: inline-block;
+    margin-right: 20px;
+}
+label[for=mapcompany_search_state] select {
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    min-width: 100px;
+}
+.mapcompany_search_functionality input[name=search_input] {
+    width: 35%;
+    margin-left: 10px;
+}
+.mapcompany_search_functionality button[name=search_button] {
+    margin-left: -3px;
+    margin-right: 10px;
+}
+.mapcompany_search_functionality button[name=search_button]:hover {
+    color: #FC801A;
+}
+.mapcompany_search_btns {
+    text-align: center;
+    margin-top: 20px;
+}
+.mapcompany_search_btn_map {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0095DA;
+    color: #fff;
+    padding: 10px;
+}
+.mapcompany_search_btn_map:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.mapcompany_search_btn_map i {
+    font-size: 20px;
+}
+.mapcompany_search_btn_map p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.mapcompany_search_table {
+    margin-top: 60px;
+    width: 80%;
+    margin-left: 10%;
+}
+.mapcompany_search_table thead {
+    background: #0095DA;
+    color: #fff;
+}
+.mapcompany_search_table thead tr td {
+    font-weight: 700;
+}
+.mapcompany_search_table tbody tr td {
+    text-align: left;
+    padding: 0.625rem 0.625rem;
+    vertical-align: middle;
+}
+
+/* Modal window */
+
+.modal_window_wrapper {
+    display: none;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.modal_window_singin {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    background: #fff;
+    text-align: center;
+    z-index: 2;
+    width: 940px;
+    padding: 50px 0;
+}
+.modal_window_singin_inside {
+    text-align: center;
+    display: inline-block;
+    width: 340px;
+}
+.modal_window_singin_inside_btn_register {
+    text-align: right;
+}
+.modal_window_singin_inside_btn_submit {
+    text-align: right;
+}
+.modal_window_singin_inside_email input,
+.modal_window_singin_inside_pass input {
+    width: 100%;
+    border: 1px solid #000;
+    margin-left: 10px;
+}
+.log_forms input[type=text], input[type=password] {
+    margin-left: 0;
+    margin: 0px;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 100%;
+    background-color: #fefefe;
+    border: 1px solid #f3f4f5;
+    padding: 10px;
+    padding: 0.625rem;
+    box-shadow: none;
+}
+.modal_window_singin_inside_email input {
+    margin-left: 40px;
+}
+.modal_window_singin_inside_email span,
+.modal_window_singin_inside_pass span {
+    width: 10px;
+}
+.modal_window_singin_inside_btn_register {
+    color: #000;
+}
+.modal_window_singin_inside_btn_register:hover {
+    color: #FC801A;
+    cursor: pointer;
+}
+.modal_window_singin_inside_btn_submit button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.modal_window_singin_inside_btn_submit button:hover {
+    color: #FC801A;
+}
+.modal_window_register {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 0;
+    width: 940px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+.modal_window_register_inside {
+    display: inline-block;
+    width: 600px;
+}
+.modal_window_register_inside p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.modal_window_register_inside form  {
+    text-align: right;
+    width: 75%;
+    margin-top: 30px;
+}
+.modal_window_register_inside {
+    text-align: right;
+}
+.modal_window_register_inside > div {
+    margin-bottom: 10px;
+    text-align: right;
+    width: 75%;
+}
+.modal_window_register_inside form div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.modal_window_register_inside form.wpcf7-form h3 + p {
+    text-align: center;
+}
+
+
+/**/
+.modal_window_recovery {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 0;
+    width: 940px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+.modal_window_recovery_inside {
+    display: inline-block;
+    width: 600px;
+}
+.modal_window_recovery_inside p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.modal_window_recovery_inside form  {
+    text-align: right;
+    width: 75%;
+    margin-top: 30px;
+}
+.modal_window_recovery_inside {
+    text-align: right;
+}
+.modal_window_recovery_inside > div {
+    margin-bottom: 10px;
+    text-align: right;
+    width: 75%;
+}
+.modal_window_recovery_inside form div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.modal_window_recovery_inside form.wpcf7-form h3 + p {
+    text-align: center;
+}
+/**/
+
+
+
+
+
+
+
+
+.mapcompany_empty_block {
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #000;
+}
+.mapcompany_empty_block_login,
+.mapcompany_empty_block_register {
+    color: #FC801A;
+	
+}
+
+.mapcompany_empty_block_recovery { color: #FC801A; font-size: 50.25%;}
+
+.mapcompany_empty_block_login:hover,
+.mapcompany_empty_block_register:hover, .mapcompany_empty_block_recovery:hover {
+    cursor: pointer;
+    color:#D36B16;
+}
+.modal_window_maps {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #fff;
+    text-align: center;
+    z-index: 2;
+    width: 940px;
+    padding: 50px 0;
+    visibility: hidden;
+}
+#modal_window_maps_inside {
+    border: 1px solid #ccc;
+    height: 450px;
+    width: 80%;
+    z-index: 3;
+    display: inline-block;
+}
+.download_db_company {
+    font-size: 14px;
+    margin-top: 50px;
+    text-align: center;
+}
+.download_db_company input {
+    font-size: 14px;
+}
+.download_db_company input:hover {
+    color: #D36B16;
+}
+.loader_file {
+    height: 50px;
+    display: none;
+}
+.upload_file {
+    display: none;
+}
+
+.mapcompany_btn_logout {
+    display: inline-block;
+    margin-left: 50px;
+}
+.mapcompany_btn_logout a {
+    text-decoration: none;
+    color: #000;
+}
+.mapcompany_btn_logout a:hover {
+    color: #ec8226;
+    text-decoration: underline;
+}
+.mapcompany_btn_access_disable {
+    background: #5F5F5F;
+    color: #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.mapcompany_btn_access_disable:hover {
+    color: #ccc;
+    cursor: no-drop;
+}
+.modal_window_register_inside > div {
+    width: 100%;
+}
+.modal_window_register_inside > div > p {
+    text-align: justify;
+}
+.no_results_mapcompany {
+    text-align: center !important;
+    font-size: 30px;
+    text-transform: uppercase;
+    border-left: none;
+    border-right: none;
+    font-style: italic;
+}
+.no_results_mapcompany_last {
+    border-left: none;
+}
+label[for=mapcompany_quantity] {
+    display: inline-block;
+    margin-left: 20px;
+}
+label[for=mapcompany_quantity] select {
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    min-width: 100px;
+}
+.show_all_row {
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.show_all_row:hover {
+    color: #EC8226;
+    text-decoration: underline;
+}
+.lwa-submit-links {
+    display: none;
+}
+.lwa-status-invalid a {
+    display: none;
+}
+.modal_window_register_inside input[type=password] {
+    width: 50%;
+}
+.mapcompany_registration label strong {
+    color: #B81708;
+}
+.form_reg_errors {
+    color: #D31A09;
+}
+.download_file_btn_disable {
+    background: #5F5F5F !important;
+    color: #ccc !important;
+    cursor: default !important;
+}
+.download_file_btn_disable:hover {
+    background: #5F5F5F !important;
+    color: #ccc !important;
+    cursor: default !important;
+}
+
+
+
+.progress_db_file {
+    height: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+.progress_db_file_mark {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width 180s ease;
+    -o-transition: width 180s ease;
+    transition: width 180s ease;
+}
+
+.progress_db_file_mark.in-progress {
+    width: 90%;
+}
+.name_company {
+    width: 50%;
+}
+tbody .state_company {
+    text-transform: uppercase;
+    width: 15%;
+    text-align: center !important;
+}
+.city_company {
+    width: 35%;
+}
+tbody .city_company {
+    padding-left: 20%;
+}
+
+   /*Media queries*/
+@media screen and (max-width:769px) {
+    .post-content {
+        padding: 0 10px 0 10px;
+    }
+    .mapcompany_search_table {
+        width: 100%;
+        margin-left: 0;
+    }
+    .mapcompany_head_img {
+        background-size: cover;
+
+    }
+    .mapcompany_btn:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 93%;
+    }
+    .mapcompany_btn {
+        width: 93%;
+    }
+    .mapcompany_search_functionality input[name=search_input] {
+        width: 64%;
+        margin-left: 0;
+    }
+    .mapcompany_btn_logout {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mapcompany_search_functionality {
+        padding: 5%;
+    }
+    #modal_window_maps_inside {
+        height: 304px;
+        width: 90%;
+    }
+    .modal_window_singin {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .modal_window_register {
+        position: fixed;
+        top: 5%;
+        left: 0;
+        height: 75%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+
+    }
+    .modal_window_register_inside {
+        width: 100%;
+        height: 100%;
+    }
+    .mapcompany_registration {
+        width: 100%;
+        margin-right: 0;
+        padding: 0 5%;
+    }
+    .modal_window_register_inside form div {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    form.mapcompany_registration input {
+        float: left;
+        width: 45%;
+    }
+    form.mapcompany_registration label {
+        display: inline-block;
+        width: 45%;
+        float: left;
+    }
+    .modal_window_register_inside form {
+        width: 100%;
+        text-align: left;
+    }
+    .modal_window_register_inside {
+        text-align: left;
+    }
+    .modal_window_register_inside input[type=submit] {
+        width: 88%;
+    }
+    .modal_window_register_inside p {
+        clear: both;
+        margin: 10px;
+    }
+    .modal_window_register_inside > div {
+        padding: 0 10px;
+        text-align: left;
+    }
+    .mapcompany_btn_logout {
+        margin-left: 0px;
+    }
+}
+/* .mapcompany_btns .mapcompany_btn_pdf {
+    width: 99%!important;
+    height: 40px;
+    margin: -15px 0px 0px -14px;
+	display: inline-block;
+} */
+
+/* .mapcompany_btns {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 99%;
+    vertical-align: middle;
+    text-align: left;
+    height: 40px;
+} */
+
+
+/*
+.mapcompany_btns .mapcompany_btn_access_disable {
+    background: #5F5F5F;
+    color: #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.mapcompany_btns .mapcompany_btn_logout a:hover {
+    color: #ec8226;
+    text-decoration: underline;
+}
+
+.mapcompany_btns .mapcompany_btn p {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 80%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.9rem;
+} */
+
+.reset_password {
+    margin: 10px 0px 0px 0px;
+}
+
+
+
+
+/* .rego-form {
+    position: absolute;
+    z-index: 2;
+    padding: 50px 0;
+    width: 940px;
+    background: #fff;
+    text-align: center;
+    display: none;
+}
+.rego-form2 {
+    display: inline-block;
+    width: 600px;
+}
+.rego-form2 p {
+    margin-bottom: 5px;
+    text-align: left;
+}
+.rego-form2 form  {
+    text-align: right;
+    width: 75%;
+    margin-top: 30px;
+}
+.rego-form2 {
+    text-align: right;
+}
+.rego-form2 > div {
+    margin-bottom: 10px;
+    text-align: right;
+    width: 75%;
+}
+.rego-form2 form div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.rego-form2 form.wpcf7-form h3 + p {
+    text-align: center;
+} */
+
+
